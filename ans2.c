@@ -1,49 +1,35 @@
 #include <stdio.h>
-#include <math.h>
-
-int main(void) {
-	int size;
-	int c;
-	char a[];
-	string name;
-	string result[];
-	
-	for (i=0,i<size,i++){
-	    if int(a[i]) > int(a[i+1])
-	       { c=a[i];
-	         a[i]=a[i+1];
-	         a[i+1]=c;
-	           
-	           
-	           
-	    }
-	    char b[];
-	    
-	    
-	    for(j=0,j<(size)!,j++)
-	    { for(k=0,k<(size-j)!,k++)
-	        {for(s=j,s<(size-j),s++){
-	            if(a[s]>a[s+1]){
-	                c=a[s]
-	            }
-	        }
-	        
-	        
-	        
-	        }
-	        
-	        b[j]=a[j];
-	        
-	        
-	    }
-	    
-	    
-	
-	
-	
-	
-	
-	
-	return 0;
+#include <stdlib.h>
+ 
+int main()
+{
+    int n, half,j,total;
+    total = 0;half =0;
+    scanf("%d", &n);
+    int prbs[n];
+    for(j=0; j<n; j++)
+    {
+        scanf("%d", &prbs[j]);
+        total += prbs[j];
+    }
+    j=0;
+    if(total%2==0)
+    {
+        while(half<total/2)
+        {
+            half += prbs[j];
+            j++;
+        }
+    }
+    else
+    {
+        while(half<((total/2)+1))
+        {
+            half += prbs[j];
+            j++;
+        }
+    }
+ 
+    printf("%d", j);
+    return 0;
 }
-
