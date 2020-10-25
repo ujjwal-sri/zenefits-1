@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <math.h>
 #include<string.h>
+int factorial(int a);
 int main(){
         int i,n,j,count=0,k=0,l=0;
         scanf("%d",&n);
