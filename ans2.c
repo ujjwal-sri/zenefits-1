@@ -10,10 +10,6 @@ int main(){
         {
             scanf("%c",letrss[i]);
         }
-        for(j=0;j<n;j++)
-        {
-            printf("%c",letrss[i]);
-        }
         char reqrd[10000];
         scanf("%s",&reqrd);
         int facti = factorial(n);
