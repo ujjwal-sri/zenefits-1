@@ -34,6 +34,7 @@ int main(){
         for(i=0;i<facti;i++){
             if(strcmp(name[i],reqrd)==0){
                 printf("%d",i+1);
+                printf("\n");
                 break;
             }
         }
