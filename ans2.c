@@ -13,6 +13,7 @@ int main(){
         char reqrd[10000];
         scanf("%s",&reqrd);
         int facti = factorial(n);
+        // int facti = factorial(n);
         char name[facti][n];
         for(i=0;i<facti;i++){
             for(j=i+1;j<n;j++){
