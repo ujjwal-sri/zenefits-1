@@ -12,6 +12,7 @@ int main(){
         }
         char reqrd[10000];
         scanf("%s",&reqrd);
+        printf("Required : %s",reqrd);
         int facti = factorial(n);
 
         // defined char var
